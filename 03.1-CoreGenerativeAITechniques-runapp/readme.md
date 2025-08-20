@@ -1,6 +1,6 @@
 # Core Generative AI Techniques - Single-File Demos
 
-> 💡 *This lesson uses .NET 10's `dotnet run <file>.cs` feature for ultra-simple AI demos. Each file is self-contained and runnable!*
+> 💡 *This lesson uses .NET 10's `dotnet run <file>.cs` feature for ultra-simple AI demos. Each file is self-contained and runnable! Don't have .NET 10 yet? Use the provided fallback scripts (`run-demo.sh` or `run-demo.ps1`) that work with .NET 9.*
 
 Welcome to the modernized version of Core Generative AI Techniques! This lesson demonstrates the same powerful AI concepts as the full [Lesson 03](../03-CoreGenerativeAITechniques/readme.md), but with simplified **single-file C# demos** that showcase the elegance of .NET 10's direct file execution.
 
@@ -266,6 +266,8 @@ dotnet run 07-ollama-local-models.cs
 
 ## Running the Demos
 
+### Option 1: .NET 10 Direct Execution (Recommended)
+
 With .NET 10 installed, running demos is incredibly simple:
 
 ```bash
@@ -285,6 +287,37 @@ dotnet run 09-semantic-kernel-chat.cs
 dotnet run 10-azure-functions.cs
 dotnet run 11-advanced-rag-vectors.cs
 ```
+
+### Option 2: Fallback Scripts (If .NET 10 Not Available)
+
+If you don't have .NET 10 yet, use the provided scripts that simulate the single-file execution:
+
+**Linux/macOS (Bash):**
+```bash
+# Navigate to the demos folder
+cd 03.1-CoreGenerativeAITechniques-runapp/src
+
+# Make script executable (first time only)
+chmod +x run-demo.sh
+
+# Run any demo
+./run-demo.sh 01-llm-completion.cs
+./run-demo.sh 02-chat-flow.cs
+./run-demo.sh 06-multimodal.cs
+```
+
+**Windows (PowerShell):**
+```powershell
+# Navigate to the demos folder
+cd 03.1-CoreGenerativeAITechniques-runapp/src
+
+# Run any demo
+.\run-demo.ps1 01-llm-completion.cs
+.\run-demo.ps1 02-chat-flow.cs
+.\run-demo.ps1 06-multimodal.cs
+```
+
+> 💡 **How the scripts work**: They create a temporary .NET project, copy your demo file as `Program.cs`, include all necessary NuGet packages, run the demo, and clean up automatically.
 
 Each demo is completely self-contained and demonstrates different aspects of Generative AI development with .NET.
 
@@ -327,9 +360,12 @@ For production Azure deployments:
 ## Common Issues & Solutions
 
 ### .NET 10 Not Available?
-- **.NET 10 is required** for the `dotnet run file.cs` syntax
+- **.NET 10 is preferred** for the modern `dotnet run file.cs` syntax
+- **Fallback option available**: Use the provided scripts in the `src/` folder:
+  - **Linux/macOS**: `./run-demo.sh <demo-file.cs>`
+  - **Windows**: `.\run-demo.ps1 <demo-file.cs>`
+- **Alternative**: Use the project-based examples in [Lesson 03](../03-CoreGenerativeAITechniques/readme.md)
 - Download the latest .NET 10 SDK from [dotnet.microsoft.com](https://dotnet.microsoft.com)
-- For earlier versions, refer to the project-based examples in [Lesson 03](../03-CoreGenerativeAITechniques/readme.md)
 
 ### Authentication Errors
 - **GitHub Models**: Ensure your `GITHUB_TOKEN` has GitHub Models access
