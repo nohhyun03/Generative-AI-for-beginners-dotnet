@@ -7,6 +7,8 @@ This lesson features sample .NET applications generated using Generative AI tool
 - 👾 **Retro Invaders Console App**: The first sample, Retro Invaders, is a console-based space battle game created with Copilot Agent Mode and GPT-4.1. [See details here.](./SpaceAINet/README.md)
 - 🖼️ **Hugging Face MCP Image Generator**: An image generation app leveraging Hugging Face's MCP Server for creating unique visuals. [See details here.](./HFMCP.GenImage/README.md)
 
+- 🖥️ **Console GPU Viewer**: A small console app demonstrating GPU diagnostics and integration with local models (or visual tooling). [See details here.](./ConsoleGpuViewer/README.md)
+
 - More sample apps will be added, each showcasing how Generative AI can help build real-world .NET solutions.
 
 ### Next steps

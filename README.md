@@ -50,6 +50,8 @@ We're constantly improving this course with the latest AI tools, models, and pra
   - **First Sample: [SpaceAINet Console App](./05-AppCreatedWithGenAI/SpaceAINet/README.md)**
   **SpaceAINet** is an AI-powered Space Battle game for .NET 9, designed to showcase how modern AI models can play classic games. The solution allows you to run the game with either local AI models (via Ollama) or cloud-based models (via Azure AI Foundry), which analyze the game state and predict the next best action to win.
   Try it out and see how AI can master classic arcade gameplay!
+  - **New Sample: [Console GPU Viewer](./05-AppCreatedWithGenAI/ConsoleGpuViewer/README.md)**
+  A lightweight console utility that demonstrates GPU diagnostics and how to integrate local model runners or visual tooling into console-based .NET apps. Useful for testing GPU availability before running local inference models.
 
 ## 🚀 Introduction
 
